@@ -29,19 +29,4 @@ deck = FrenchDeck()
 
 # print(Card ('Q', 'hearts') in deck)
 
-suit_values = dict(spades=3, hearts=2, diamonds=1, clubs=0)
 
-def spades_high(card):
-    rank_value = FrenchDeck.ranks.index(card.rank)
-    return rank_value * len(suit_values) + suit_values[card.suit]
-
-for card in sorted(deck, key=spades_high):
-    print(card)
-    if card[1] == 'diamonds':
-        print("Here's a diamond")
-    elif card[1] == 'hearts':
-        print("Here's a hearts")
-    elif card[1] == "spades":
-        print("Here's a spades")
-    else:
-        print("Here's a clubs")
