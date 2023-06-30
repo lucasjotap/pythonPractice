@@ -4,3 +4,7 @@ import numpy as np
 x = np.array([[1, 2, 3], [4, 5, 6]], np.int32)
 print(type(x)) # <class 'numpy.ndarray'>
 print(x.shape) # (2, 3)
+print(x.dtype) # int32
+print(x[1]) # [4 5 6]
+print(x[1, 1]) # 5
+
